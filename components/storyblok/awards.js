@@ -1,7 +1,7 @@
 const Awards = ({blok}) => {
     
     return (
-        <div className="flex flex-row justify-center py-5 bg-blue-600 w-full m-auto my-20 text-white font-my-font text-center">
+        <div className="flex flex-row justify-center py-5 bg-blue-600 w-full mt-20 my-auto my-20 text-white font-my-font text-center">
             <div className="flex flex-col items-center w-2/12">
                 <img src={blok.award_image1.filename} />
                 <p className="mt-5 px-5">

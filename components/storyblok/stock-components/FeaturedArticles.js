@@ -1,4 +1,4 @@
-import ArticleTeaser from './ArticleTeaser'
+import ArticleTeaser from '../article-teaser'
 
 const FeaturedArticles = ({blok}) => {
   return (

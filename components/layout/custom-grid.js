@@ -1,4 +1,4 @@
-import DynamicComponent from './DynamicComponent'
+import DynamicComponent from '../storyblok/stock-components/DynamicComponent'
 
 const CustomGrid = ({blok}) => {
   return (

@@ -1,8 +1,8 @@
 // The Storyblok Client
 import Storyblok from "../lib/storyblok"
 import useStoryblok from "../lib/storyblok-hook"
-import Page from '../components/Page'
-import Layout from '../components/Layout'
+import Page from '../components/storyblok/stock-components/Page'
+import Layout from '../components/layout/stock-components/Layout'
 
 export default function Home(props) {
   // the Storyblok hook to enable live updates
