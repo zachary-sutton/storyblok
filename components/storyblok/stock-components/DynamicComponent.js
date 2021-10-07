@@ -13,12 +13,10 @@ import CustomGrid from '../../layout/custom-grid'
 import BestOffersCard from '../best-offers-card'
 import BestOffersGrid from "../../layout/best-offers-grid"
 import Awards from "../awards"
-import SocialPartners from '../social-partners'
-import Terms from '../terms-and-conditions'
-import Footer from '../footer'
-import MapTest from '../../layout/map-test'
+import SocialsAndPartners from '../socials-and-partners/socials-and-partners'
 import FooterGrid from '../../layout/footer-grid'
 import FooterContainer from '../footer-container/footer-container'
+import FAQContainer from '../FAQ-container/FAQ-container'
 
 // resolve Storyblok components to Next.js components
 const Components = {
@@ -35,12 +33,10 @@ const Components = {
   "best-offers-card" : BestOffersCard,
   "best-offers-grid" : BestOffersGrid,
   "awards" : Awards,
-  "social_partners": SocialPartners,
-  "terms": Terms,
-  "FAQs" : Footer,
-  "test-map" : MapTest,
+  "socials_and_partners": SocialsAndPartners,
   "footer-grid" : FooterGrid,
-  "footer-container" : FooterContainer
+  "footer-container" : FooterContainer,
+  "FAQ-container" : FAQContainer
 }
 
 const DynamicComponent = ({blok}) => {
