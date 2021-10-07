@@ -1,7 +1,5 @@
 const CTACard = ({blok}) => {
-
-    //<div className={`bg-card${blok.image_no} py-24 px-4`} style={{borderRadius: "10px"}} >
-
+    //this should probably be mapped like footer section is.
     return (
         <div className="w-full p-12 m-2 font-my-font shadow-2xl rounded-3xl cursor-pointer bg-cover" style={{backgroundImage: `url(${blok.bg_img.filename})`}}>
                 <h2 className="text-4xl text-center"><span className="bg-white px-2 rounded-3xl">{blok.title_text}</span></h2>

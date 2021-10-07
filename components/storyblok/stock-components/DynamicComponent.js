@@ -2,15 +2,14 @@ import SbEditable from 'storyblok-react'
 import Teaser from './Teaser'
 import Feature from './Feature'
 import Grid from '../../layout/stock-components/Grid'
-import FeaturedArticles from './FeaturedArticles'
 import Placeholder from './Placeholder'
-import NavBar from '../nav-bar'
-import LandingContent from '../landing-content'
-import CTACard from '../CTACard'
-import DOTW from '../destination-of-the-week'
-import PopularDestinationTile from "../popular-destination-tile"
+import NavBar from '../nav-bar/nav-bar'
+import LandingContent from '../landing-content/landing-content'
+import CTACard from '../cta-card/cta-card'
+import DestinationOfTheWeek from '../destination-of-the-week/destination-of-the-week'
+import PopularDestinationTile from "../popular-destination-tile/popular-destination-tile"
 import CustomGrid from '../../layout/custom-grid'
-import BestOffersCard from '../best-offers-card'
+import BestOffersCard from '../best-offers-card/best-offers-card'
 import BestOffersGrid from "../../layout/best-offers-grid"
 import Awards from "../awards/awards"
 import SocialsAndPartners from '../socials-and-partners/socials-and-partners'
@@ -23,11 +22,10 @@ const Components = {
   'teaser': Teaser,
   'grid': Grid,
   'feature': Feature,
-  'featured-articles': FeaturedArticles,
   "nav-bar" : NavBar, 
   "landing-content": LandingContent,
   "cta-card": CTACard,
-  "DOTW" : DOTW,
+  "DOTW" : DestinationOfTheWeek,
   "popular-destination-tile" : PopularDestinationTile,
   "custom-grid" : CustomGrid,
   "best-offers-card" : BestOffersCard,
