@@ -25,7 +25,7 @@ const Components = {
   "nav-bar" : NavBar, 
   "landing-content": LandingContent,
   "cta-card": CTACard,
-  "DOTW" : DestinationOfTheWeek,
+  "destination-of-the-week" : DestinationOfTheWeek,
   "popular-destination-tile" : PopularDestinationTile,
   "custom-grid" : CustomGrid,
   "best-offers-card" : BestOffersCard,
