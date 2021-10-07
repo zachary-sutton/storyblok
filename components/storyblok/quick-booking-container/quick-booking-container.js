@@ -41,18 +41,22 @@ class QuickBookingContainer extends React.Component{
 
 
         handleMinusNumbers(e){
+            console.log(this.state.adults)
             if(e.target.name === "adults"){
-                this.setState(prevState => ({
+                this.setState(prevState => (
+                    prevState.adults === 0 ? {[e.target.name]: 0} : {
                     [e.target.name]: prevState.adults - 1
-                }))
+                    }))
             } else if(e.target.name === "children"){
-                this.setState(prevState => ({
+                this.setState(prevState => (
+                    prevState.children === 0 ? {[e.target.name]: 0} : {
                     [e.target.name]: prevState.children - 1
-                }))
+                    }))
             } else {
-                this.setState(prevState => ({
+                this.setState(prevState => (
+                    prevState.infants === 0 ? {[e.target.name]: 0} : {
                     [e.target.name]: prevState.infants - 1
-                }))
+                    }))
                 }
             }
 
