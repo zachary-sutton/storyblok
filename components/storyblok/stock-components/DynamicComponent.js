@@ -12,7 +12,7 @@ import PopularDestinationTile from "../popular-destination-tile"
 import CustomGrid from '../../layout/custom-grid'
 import BestOffersCard from '../best-offers-card'
 import BestOffersGrid from "../../layout/best-offers-grid"
-import Awards from "../awards"
+import Awards from "../awards/awards"
 import SocialsAndPartners from '../socials-and-partners/socials-and-partners'
 import FooterGrid from '../../layout/footer-grid'
 import FooterContainer from '../footer-container/footer-container'
