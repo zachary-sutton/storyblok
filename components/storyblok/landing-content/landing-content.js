@@ -1,7 +1,9 @@
+import QuickBookingContainer from "../quick-booking-container/quick-booking-container"
+
 const LandingContent = ({blok}) => {
     return (
-        <div className="shadow-2xl">
-            <img src={blok.landingImg.filename} width="100%" />
+        <div className="flex justify-center shadow-2xl p-32" style={{backgroundImage: `url(${blok.landingImg.filename})`}}>
+            <QuickBookingContainer />
         </div>
     )
   }
