@@ -142,7 +142,7 @@ class QuickBookingContainer extends React.Component{
                 <div className="flex flex-row justify-between text-center text-white">
                     <h1 name="flights" onClick={this.handleFlightTab} className={`w-4/12 rounded-t-xl p-1 mr-1 cursor-pointer ${isHighlighted0}`}>Flights</h1>
                     <h1 name="holidays" onClick={this.handleHolidaysTab} className={`w-4/12 rounded-t-xl p-1 mr-1 cursor-pointer ${isHighlighted1}`}>Holidays</h1>
-                    <h1 name="cars" onClick={this.handleCarsTab} className={`w-4/12 rounded-t-xl p-1 mr-1 cursor-pointer ${isHighlighted2}`}>Cars</h1>
+                    <h1 name="cars" onClick={this.handleCarsTab} className={`w-4/12 rounded-t-xl p-1 cursor-pointer ${isHighlighted2}`}>Cars</h1>
                 </div>
                 {tabDisplay()}
             </div>
