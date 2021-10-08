@@ -1,6 +1,6 @@
 const Layout = ({ children }) => (
   <div>
-    <div className="py-10 mx-auto">
+    <div className="mx-auto">
       {children}
     </div>
   </div>

@@ -24,6 +24,7 @@ class QuickBookingContainer extends React.Component{
         this.handleHolidaysTab = this.handleHolidaysTab.bind(this)
         this.handleCarsTab = this.handleCarsTab.bind(this)
     }
+    //THIS ALL NEEDS ADDING TO STORYBLOK
 
     //split logic into another file
     handleText(e){
@@ -130,7 +131,7 @@ class QuickBookingContainer extends React.Component{
         }
 
         return(
-            <div className="w-4/12 font-my-font">
+            <div className="w-3/12 font-my-font my-auto">
                 <div className="flex flex-row justify-between text-center text-white">
                     <h1 name="flights" onClick={this.handleFlightTab} className="w-4/12 rounded-t-xl bg-black p-1 mr-1">Flights</h1>
                     <h1 name="holidays" onClick={this.handleHolidaysTab} className="w-4/12 rounded-t-xl bg-black p-1 mr-1">Holidays</h1>
