@@ -14,7 +14,7 @@ class QuickBookingContainer extends React.Component{
             adults: 0,
             children: 0,
             infants: 0,
-            tab: 1
+            tab: 2
         }
 
         this.handleText = this.handleText.bind(this)

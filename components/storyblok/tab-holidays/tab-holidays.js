@@ -19,7 +19,7 @@ const TabHolidays = (props) => {
                 <input className="p-1 py-4 my-1 text-sm w-full" style={{border: "solid 0.5px black"}} onChange={props.handleText} name="returnDate" type="text" placeholder={`return date: e.g. ${shortReturnDate}`} value={props.returnDate}/>
             <div className="mt-4">
                 <div className="flex justify-between content-center py-1">
-                    <h1 className="text-sm">Adults (16+)</h1>
+                    <h1 className="text-sm">Guests</h1>
                     <div className="flex justify-between">
                         <button className="px-1" type="button" onClick={props.handleMinusNumbers} name="adults" value={props.adults} >-</button>
                         <h1 className="px-1 text-center">{props.adults}</h1>
@@ -27,19 +27,11 @@ const TabHolidays = (props) => {
                     </div>
                 </div>
                 <div className="flex justify-between">
-                    <h1 className="text-sm">Children (2-15)</h1>
+                    <h1 className="text-sm">Rooms</h1>
                     <div className="flex justify-between">
                         <button className="px-1" type="button" onClick={props.handleMinusNumbers} name="children" value={props.children} >-</button>
                         <h1 className="px-1">{props.children}</h1>
                         <button className="px-1" type="button" onClick={props.handlePlusNumbers} name="children" value={props.children}>+</button>
-                    </div>
-                </div>
-                <div className="flex justify-between py-1">
-                    <h1 className="text-sm">Infants (0-2)</h1>
-                    <div className="flex justify-between">
-                        <button className="px-1" type="button" onClick={props.handleMinusNumbers} name="infants" value={props.infants} >-</button>
-                        <h1 className="px-1">{props.infants}</h1>
-                        <button className="px-1" type="button" onClick={props.handlePlusNumbers} name="infants" value={props.infants}>+</button>
                     </div>
                 </div>
             </div>
