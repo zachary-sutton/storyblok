@@ -14,7 +14,10 @@ class QuickBookingContainer extends React.Component{
             adults: 0,
             children: 0,
             infants: 0,
-            tab: 2
+            tab: 0,
+            highlighted0: true,
+            highlighted1: false,
+            highlighted2: false
         }
 
         this.handleText = this.handleText.bind(this)
@@ -68,15 +71,15 @@ class QuickBookingContainer extends React.Component{
         }
         // needs to be all one hook, e.target.name not working find another way
         handleFlightTab(){
-            this.setState({tab: 0})
+            this.setState({tab: 0, highlighted0: true, highlighted1: false, highlighted2: false})
         }
 
         handleHolidaysTab(){
-            this.setState({tab: 1})
+            this.setState({tab: 1, highlighted0: false, highlighted1: true, highlighted2: false})
         }
 
         handleCarsTab(){
-            this.setState({tab: 2})
+            this.setState({tab: 2, highlighted0: false, highlighted1: false, highlighted2: true})
         }
 
     render(){
@@ -130,12 +133,16 @@ class QuickBookingContainer extends React.Component{
             }
         }
 
+        const isHighlighted0 = this.state.highlighted0 ? "bg-white text-black" : "bg-black text-white"
+        const isHighlighted1 = this.state.highlighted1 ? "bg-white text-black" : "bg-black text-white"
+        const isHighlighted2 = this.state.highlighted2 ? "bg-white text-black" : "bg-black text-white"
+
         return(
             <div className="w-3/12 font-my-font my-auto">
                 <div className="flex flex-row justify-between text-center text-white">
-                    <h1 name="flights" onClick={this.handleFlightTab} className="w-4/12 rounded-t-xl bg-black p-1 mr-1">Flights</h1>
-                    <h1 name="holidays" onClick={this.handleHolidaysTab} className="w-4/12 rounded-t-xl bg-black p-1 mr-1">Holidays</h1>
-                    <h1 name="cars" onClick={this.handleCarsTab} className="w-4/12 rounded-t-xl bg-black p-1">Cars</h1>
+                    <h1 name="flights" onClick={this.handleFlightTab} className={`w-4/12 rounded-t-xl p-1 mr-1 cursor-pointer ${isHighlighted0}`}>Flights</h1>
+                    <h1 name="holidays" onClick={this.handleHolidaysTab} className={`w-4/12 rounded-t-xl p-1 mr-1 cursor-pointer ${isHighlighted1}`}>Holidays</h1>
+                    <h1 name="cars" onClick={this.handleCarsTab} className={`w-4/12 rounded-t-xl p-1 mr-1 cursor-pointer ${isHighlighted2}`}>Cars</h1>
                 </div>
                 {tabDisplay()}
             </div>

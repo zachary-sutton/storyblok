@@ -3,7 +3,7 @@ const NavBar = ({blok}) => {
     return (
       <div>
         <div className="hidden md:block">
-          <div className="flex justify-between bg-blue-600 p-1 font-my-font text-white">
+          <div className="flex justify-between bg-blue-600 p-1 font-my-font text-white shadow-2xl">
             <div className="flex">
               <ul className="flex flex-row">
                 {blok.nav_left.map((nav, i) => (

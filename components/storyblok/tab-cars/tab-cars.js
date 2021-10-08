@@ -61,7 +61,7 @@ class TabCars extends React.Component{
 
 
         return(
-            <div className="p-10 border-2 bg-white">
+            <div className="p-10 bg-white">
                 <h1 className="text-3xl mb-3">Search Cars:</h1>
                 <form className="w-full">
                     <input className="p-1 py-4 my-1 text-sm w-full" style={{border: "solid 0.5px black"}}  onChange={this.props.handleText} name="from" type="text" placeholder="from: e.g. Leeds Bradford (LBA)" value={this.props.from} />

@@ -10,7 +10,7 @@ const TabHolidays = (props) => {
     const shortReturnDate = returnDate.toLocaleDateString()
 
     return(
-        <div className="p-10 border-2 bg-white">
+        <div className="p-10 bg-white">
             <h1 className="text-3xl mb-3">Search Holidays:</h1>
             <form className="w-full">
                 <input className="p-1 py-4 my-1 text-sm w-full" style={{border: "solid 0.5px black"}}  onChange={props.handleText} name="from" type="text" placeholder="from: e.g. Leeds Bradford (LBA)" value={props.from} />

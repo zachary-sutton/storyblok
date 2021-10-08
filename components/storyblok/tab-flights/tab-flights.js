@@ -10,7 +10,7 @@ const TabFlights = (props) => {
     const shortReturnDate = returnDate.toLocaleDateString()
 
     return(
-        <div className="p-10 border-2 bg-white">
+        <div className="p-10 bg-white">
             <h1 className="text-3xl mb-3">Search Flights:</h1>
             <form className="w-full">
             <div style={{border: "solid 1px black"}}>
