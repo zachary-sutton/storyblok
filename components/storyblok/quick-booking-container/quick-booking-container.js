@@ -6,6 +6,7 @@ import TabCars from "../tab-cars/tab-cars"
 class QuickBookingContainer extends React.Component{
     constructor(props){
         super(props)
+        //each tab needs its own state because the form fields in each tab are currently sharing value
         this.state = {
             from: "",
             to: "",
@@ -133,12 +134,13 @@ class QuickBookingContainer extends React.Component{
             }
         }
 
+        //needs changing to somehow only use one statement/bit of state
         const isHighlighted0 = this.state.highlighted0 ? "bg-white text-black" : "bg-black text-white"
         const isHighlighted1 = this.state.highlighted1 ? "bg-white text-black" : "bg-black text-white"
         const isHighlighted2 = this.state.highlighted2 ? "bg-white text-black" : "bg-black text-white"
 
         return(
-            <div className="w-3/12 font-my-font my-auto">
+            <div className="w-11/12 md:w-8/12 lg:w-4/12 xl:w-3/12 font-my-font my-auto">
                 <div className="flex flex-row justify-between text-center text-white">
                     <h1 name="flights" onClick={this.handleFlightTab} className={`w-4/12 rounded-t-xl p-1 mr-1 cursor-pointer ${isHighlighted0}`}>Flights</h1>
                     <h1 name="holidays" onClick={this.handleHolidaysTab} className={`w-4/12 rounded-t-xl p-1 mr-1 cursor-pointer ${isHighlighted1}`}>Holidays</h1>

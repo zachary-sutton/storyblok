@@ -17,6 +17,7 @@ import FooterGrid from '../../layout/footer-grid'
 import FooterContainer from '../footer-container/footer-container'
 import FAQContainer from '../FAQ-container/FAQ-container'
 import QuickBookingContainer from '../quick-booking-container/quick-booking-container'
+import RichTest from '../rich-test/rich-test'
 
 // resolve Storyblok components to Next.js components
 const Components = {
@@ -36,7 +37,9 @@ const Components = {
   "footer-grid" : FooterGrid,
   "footer-container" : FooterContainer,
   "FAQ-container" : FAQContainer,
-  "quick-booking-container" : QuickBookingContainer
+  "quick-booking-container" : QuickBookingContainer,
+  "rich-test" : RichTest
+
 }
 
 const DynamicComponent = ({blok}) => {
