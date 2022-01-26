@@ -1,3 +1,6 @@
+import {Helmet} from 'react-helmet'
+import {useEffect} from 'react'
+
 const CTACard = ({blok}) => {
     //this should probably be mapped like footer section is.
     return (
